@@ -1,0 +1,9 @@
+build:
+  docker:
+    web: Dockerfile.web
+    worker: Dockerfile.worker
+  config:
+    SHOPIFY_API_KEY: c3c3c9f1da36989c2faa75b57a055335
+    SPACES_ACCESS_KEY_ID: DO00Y6MRBCPPGPEJJ4M4
+    SPACES_SECRET_ACCESS_KEY: jY6MFtW3iKlLXfAx2EWlVAqou8tx44NPr668SX5qeZI
+    SPACES_BUCKET: passionfruit-reviews-sheets

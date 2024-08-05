@@ -1,0 +1,31 @@
+FROM ruby:3.2.2-alpine
+
+ARG SHOPIFY_API_KEY
+ENV SHOPIFY_API_KEY=$SHOPIFY_API_KEY
+
+ARG SPACES_ACCESS_KEY_ID
+ENV SPACES_ACCESS_KEY_ID=$SPACES_ACCESS_KEY_ID
+
+ARG SPACES_SECRET_ACCESS_KEY
+ENV SPACES_SECRET_ACCESS_KEY=$SPACES_SECRET_ACCESS_KEY
+
+ARG SPACES_BUCKET
+ENV SPACES_BUCKET=$SPACES_BUCKET
+
+RUN apk update && apk add nodejs npm git build-base libpq-dev gcompat bash openssl-dev
+WORKDIR /app
+
+COPY web .
+
+RUN cd frontend && npm install
+RUN bundle install
+
+RUN cd frontend && npm run build
+RUN rake build:all
+
+COPY entrypoints/web.sh /usr/bin/
+RUN chmod +x /usr/bin/web.sh
+
+ENTRYPOINT ["web.sh"]
+
+CMD rails server -b 0.0.0.0 -e production

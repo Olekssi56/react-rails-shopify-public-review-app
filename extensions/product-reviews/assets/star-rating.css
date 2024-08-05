@@ -1,0 +1,7 @@
+.passionfruit-stars {
+  display: flex;
+}
+
+.passionfruit-star + .passionfruit-star {
+  margin-left: 4px;
+}

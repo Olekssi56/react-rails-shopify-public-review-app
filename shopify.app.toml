@@ -1,0 +1,33 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "2dd78bbd27688aab41cf59dfef83d99c"
+name = "Passionfruit Reviews Dev"
+application_url = "https://passionfruit-reviews.ngrok.app"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "passionfruit-reviews-development.myshopify.com"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+use_legacy_install_flow = true
+
+[auth]
+redirect_urls = [
+  "https://passionfruit-reviews.ngrok.app/auth/callback",
+  "https://passionfruit-reviews.ngrok.app/auth/shopify/callback",
+  "https://passionfruit-reviews.ngrok.app/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[app_proxy]
+url = "https://passionfruit-reviews.ngrok.app/api/storefront"
+subpath = "passionfruit"
+prefix = "apps"
+
+[pos]
+embedded = false
