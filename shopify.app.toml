@@ -1,13 +1,13 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
-client_id = "2dd78bbd27688aab41cf59dfef83d99c"
+client_id = "35d6afa3efd3967c37742a68a14a6520"
 name = "Passionfruit Reviews Dev"
-application_url = "https://passionfruit-reviews.ngrok.app"
+application_url = "https://examining-executives-tire-besides.trycloudflare.com"
 embedded = true
 
 [build]
 automatically_update_urls_on_dev = true
-dev_store_url = "passionfruit-reviews-development.myshopify.com"
+dev_store_url = "quickstart-3c08b97b.myshopify.com"
 
 [access_scopes]
 # Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
@@ -16,16 +16,16 @@ use_legacy_install_flow = true
 
 [auth]
 redirect_urls = [
-  "https://passionfruit-reviews.ngrok.app/auth/callback",
-  "https://passionfruit-reviews.ngrok.app/auth/shopify/callback",
-  "https://passionfruit-reviews.ngrok.app/api/auth/callback"
+  "https://examining-executives-tire-besides.trycloudflare.com/auth/callback",
+  "https://examining-executives-tire-besides.trycloudflare.com/auth/shopify/callback",
+  "https://examining-executives-tire-besides.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
 api_version = "2024-01"
 
 [app_proxy]
-url = "https://passionfruit-reviews.ngrok.app/api/storefront"
+url = "https://examining-executives-tire-besides.trycloudflare.com/api/storefront"
 subpath = "passionfruit"
 prefix = "apps"
 

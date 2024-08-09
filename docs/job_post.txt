@@ -1,0 +1,20 @@
+Hi all, we have been developing a React-based review app and we need an experienced Shopify developer to finish the development of our review app.
+
+The react app is partially completed in terms of app structure and base features but requires further development and debugging to be fully functional.
+
+App requirements.
+
+
+- Debugging and testing the existing app/fixing any errors to ensure it’s ready to deploy to the shopify App Store
+
+fixing the payment plans, onboarding pages, sorting out email templates and making sure reviews show up properly.
+
+- Someone who can check in regularly with updates on the progress of the app
+- Adding some additional features or settings and managing reviews
+- Any other small coding tasks that pop up along the way
+
+Interested people should provide the following:
+
+- A bit about yourself and your Shopify app development experience
+- Examples of previous Shopify apps/portfolio
+- Estimated timeline and total budget.
